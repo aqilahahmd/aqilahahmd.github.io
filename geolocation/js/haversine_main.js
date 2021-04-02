@@ -24,8 +24,8 @@ elLocate.addEventListener("click",function(){
             elLat.innerHTML = "Your latitude: " + userLat;
             elLong.innerHTML = "Your longitude: " + userLong;
             elDepulze.innerHTML = "Distance to De Pulze, Cyberjaya is " + distances [0] + "km";
-            elSunway.innerHTML = "Distance to Sunway, Selangor is " + distances [2] + "km";
-            elKlcc.innerHTML = "Distance to KLCC,Ampang is " + distances [1] + "km";
+            elSunway.innerHTML = "Distance to Sunway, Selangor is " + distances [1] + "km";
+            elKlcc.innerHTML = "Distance to KLCC,Ampang is " + distances [2] + "km";
         });
     } else {
         alert("Geolocation is not supported by this browser.")
