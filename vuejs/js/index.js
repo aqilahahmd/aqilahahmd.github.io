@@ -31,7 +31,7 @@ let app4 = new Vue ({
             },
             {
                 text:"Learn CSS"
-            }
+            },
             {
                 text:"Learn Javascript"
             }
@@ -46,15 +46,15 @@ let app5 = new Vue ({
     },
     methods: {
         reverseMsg: function (){
-            this.msg = this.msg.split(""),reverse().join("";)
+            this.msg = this.msg.split(""),reverse().join("")
         }
-
-        let app6 = new Vue({
-            el: "#app6",
-            data: {
-                message:"Hello World!"
-            }
-        });
+        
+    }
+});
+let app6 = new Vue({
+    el: "#app6",
+    data: {
+        message:"Hello World!"
     }
 });
 
