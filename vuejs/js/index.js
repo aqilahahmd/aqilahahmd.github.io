@@ -48,5 +48,12 @@ let app5 = new Vue ({
         reverseMsg: function (){
             this.msg = this.msg.split(""),reverse().join("";)
         }
+
+        let app6 = new Vue({
+            el: "#app6",
+            data: {
+                message:"Hello World!"
+            }
+        });
     }
 });
