@@ -44,7 +44,7 @@ let app5 = new Vue ({
     data: {
         msg: "Hakim Ariff"
     },
-    method: {
+    methods: {
         reverseMsg: function (){
             this.msg = this.msg.split(""),reverse().join("";)
         }
