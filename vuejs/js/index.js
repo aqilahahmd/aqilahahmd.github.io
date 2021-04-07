@@ -1,11 +1,11 @@
-let app = new VTTCue({
+let app = new Vue({
    el: "#app",
    data: {
        message: "Hello Vue!"
    } 
 });
 
-let app2 = new VTTCue({
+let app2 = new Vue({
     el: "#app2",
     data: {
         message: "Loaded on " + new Date().toLocaleString(),
@@ -13,7 +13,7 @@ let app2 = new VTTCue({
         linkText: "Google is down"
     }
 
-};)
+});
 
 let app3 = new Vue ({
     el: "app3",
@@ -58,7 +58,7 @@ let app5 = new Vue ({
     }
 });
 
-Vue.component("todo-itgrocery-list",{
+Vue.component("grocery-list",{
     props:["todo"],
     template:"<li>{{todo.desc}}</li>"
 });
