@@ -1,7 +1,7 @@
 let app = new VTTCue({
    el: "#app",
    data: {
-       message:"Hello Vue!"
+       message: "Hello Vue!"
    } 
 });
 
