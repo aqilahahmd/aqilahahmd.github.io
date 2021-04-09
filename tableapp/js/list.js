@@ -1,7 +1,6 @@
 let refreshNowBtn = document.getElementById("refreshNow");
 refreshNowBtn.addEventListener("click",function(){
     GetBooking();
-    
 });
 
 function GetBooking(){
@@ -13,11 +12,11 @@ function GetBooking(){
         let bookingNameList = document.getElementById("bookingNameList");
 
         //clear the table rows
-        for(let k = bookingNameList.rows.length - 1; k > 0 ; k--){
+        for(let k = bookingNameList.rows.length - 1; k > 0; k--){
             bookingNameList.deleteRow(k);
         }
 
-        for(let i = 0; i < json.bookingitem.length; i++){
+        for(let i = 0; i < json.bookingitems.length; i++){
             let gName = json.bookingitems[i].name;
             let gEmail = json.bookingitems[i].email;
             let gPax = json.bookingitems[i].pax;
@@ -32,5 +31,5 @@ function GetBooking(){
             row.insertCell(4).innerHTML = gRemarks;
             row.insertCell(5).innerHTML = "TBC";
         }
-});
+    });
 }
