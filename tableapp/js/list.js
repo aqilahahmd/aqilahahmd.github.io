@@ -1,6 +1,7 @@
 let refreshNowBtn = document.getElementById("refreshNow");
 refreshNowBtn.addEventListener("click",function(){
     GetBooking();
+    
 });
 
 function GetBooking(){
