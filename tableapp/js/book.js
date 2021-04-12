@@ -1,4 +1,4 @@
-let bookNowBtn = documentt.getElementById("bookNow");
+let bookNowBtn = document.getElementById("bookNow");
 bookNowBtn.addEventListener("click", function () {
     let userName = document.getElementById("userName");
     let userNameVal = userName.value;
@@ -13,9 +13,9 @@ bookNowBtn.addEventListener("click", function () {
 });
 
 function BookNow(userName, userEmail, userPax, userRemarks) {
-    let url = 'https://api.sheety.co/14e5dbeb43f50147a8373c58a5a3b6e5/tableapp/bookingList';
+    let url = 'https://api.sheety.co/14e5dbeb43f50147a8373c58a5a3b6e5/tableapp/bookingitem';
     let body = {
-        bookingList: {
+        bookingitem: {
             name: userName,
             email: userEmail,
             pax: userPax,
@@ -31,6 +31,6 @@ function BookNow(userName, userEmail, userPax, userRemarks) {
     })
         .then((response) => response.json())
         .then(json => {
-            aler(json.bookingList.name + + "," + json.bookingList.name +" successfully added ")
+            aler(json.bookingtem.name + + "," + json.bookingitem.name +" successfully added ")
         });
 }
