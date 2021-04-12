@@ -4,10 +4,10 @@ bookNowBtn.addEventListener("click",function(){
     let userNameVal = userName.value;
 
     let userEmail = document.getElementById("userEmail");
-    let UserEmailVal = userEmail.value;
+    let userEmailVal = userEmail.value;
 
     let userPaxVal = document.getElementById("userPax").value;
-    let userRemarksVal = document.getElementById("userRemarks0").value;
+    let userRemarksVal = document.getElementById("userRemarks").value;
 
     bookNowBtn(userNameVal, UserEmailVal, userPaxVal, userRemarksVal);
 });
