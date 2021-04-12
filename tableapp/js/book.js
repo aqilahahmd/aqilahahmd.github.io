@@ -31,6 +31,6 @@ function BookNow(userName, userEmail, userPax, userRemarks) {
     })
         .then((response) => response.json())
         .then(json => {
-            aler(json.bookingList.name + " successfully added ")
+            aler(json.bookingList.name + + "," + json.bookingList.name +" successfully added ")
         });
 }
