@@ -36,12 +36,25 @@ function GetBooking() {
                 bookingIds.push(btnId);
             }
 
-            for(let j=0; j < bookingIds.length; j++){
+            for (let j = 0; j < bookingIds.length; j++) {
                 let el = document.getElementById(bookingIds[j]);
-                el.addEventListener("click",function(){
-                    let theId = bookingIds[j].replace("delete","");
-                    console.log("delete button id = " + theId);
+                el.addEventListener("click", function () {
+                    let theId = bookingIds[j].replace("delete", "");
+                    DeleteBooking(theId);
                 });
             }
+        });
+}
+
+
+function DeleteBooking(id) {
+    let url = 'https://api.sheety.co/14e5dbeb43f50147a8373c58a5a3b6e5/tableapp/bookingitem/' + id;
+    fetch(url, {
+        method: 'DELETE',
+    })
+        .then((response) => response.json())
+        .then(() => {
+            alert("Record id " + "deleted!");
+            GetBooking();
         });
 }
