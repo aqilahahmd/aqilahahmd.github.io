@@ -52,7 +52,6 @@ function DeleteBooking(id) {
     fetch(url, {
         method: 'DELETE',
     })
-        .then((response) => response.json())
         .then(() => {
             alert("Record id " + "deleted!");
             GetBooking();
