@@ -10,6 +10,7 @@ function GetBooking() {
         .then(json => {
 
             let bookingNameList = document.getElementById("bookingNameList");
+            let bookingIds = [];
 
             //clear the table rows
             for (let k = bookingNameList.rows.length - 1; k > 0; k--) {
@@ -22,6 +23,7 @@ function GetBooking() {
                 let gPax = json.bookingitem[i].pax;
                 let gRemarks = json.bookingitem[i].remarks;
                 let gId = json.bookingitem[i].id;
+                let btnId = "delete" + gId;
 
                 let row = bookingNameList.insertRow(bookingNameList.rows.length);
                 row.insertCell(0).innerHTML = gId;
@@ -29,7 +31,7 @@ function GetBooking() {
                 row.insertCell(2).innerHTML = gEmail;
                 row.insertCell(3).innerHTML = gPax;
                 row.insertCell(4).innerHTML = gRemarks;
-                row.insertCell(5).innerHTML = "<button id='" + gId + "' class='btn btn-danger'> Delete </button>";
+                row.insertCell(5).innerHTML = "<button id='" + btnId + "' class='btn btn-danger'> Delete </button>";
 
                 bookingIds.push(btnId);
             }
