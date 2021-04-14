@@ -30,6 +30,16 @@ function GetBooking() {
                 row.insertCell(3).innerHTML = gPax;
                 row.insertCell(4).innerHTML = gRemarks;
                 row.insertCell(5).innerHTML = "<button id='" + gId + "' class='btn btn-danger'> Delete </button>";
+
+                bookingIds.push(btnId);
+            }
+
+            for(let j=0; j < bookingIds.length; j++){
+                let el = document.getElementById(bookingIds[j]);
+                el.addEventListener("click",function(){
+                    let theId = bookingIds[j].replace("delete","");
+                    console.log("delete button id = " + theId);
+                });
             }
         });
 }
