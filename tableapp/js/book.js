@@ -4,12 +4,12 @@ bookNowBtn.addEventListener("click",function(){
     let userNameVal = userName.value;
 
     let userEmail = document.getElementById("userEmail");
-    let UserEmailVal = userEmail.value;
+    let userEmailVal = userEmail.value;
 
     let userPaxVal = document.getElementById("userPax").value;
     let userRemarksVal = document.getElementById("userRemarks").value;
 
-    bookNow(userNameVal, UserEmailVal, userPaxVal, userRemarksVal);
+    bookNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal);
 });
 
 function bookNow(userName, userEmail, userPax, userRemarks) {
