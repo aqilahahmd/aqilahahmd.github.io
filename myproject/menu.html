@@ -72,7 +72,17 @@
             </div>
         </div>
 
+        <!--Jumbotron-->
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">
+                    <h3 class="display-4">Here are the MENU</h1>
+                        <p class="lead">Scroll down below to make your order.</p>
+                </div>
+            </div>
+        </div>
 
+        <!--Cards-->
         <h1>Beverages</h1>
         <div class="row row-cols-1 row-cols-md-2">
 
@@ -166,7 +176,7 @@
             </div>
         </div>
 
-        <h1>Dessert</h1>
+        <h1>Desserts</h1>
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col mb-4">
                 <div class="card">
@@ -211,22 +221,77 @@
                             additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
-            </div> 
-        </div>
-
-    </div>
-
-    <!--Jumbotron-->
-    <div class="row">
-        <div class="col">
-            <div class="jumbotron">
-                <h3 class="display-4">Ready to Order Now</h1>
-                <p class="lead">Just click to make your order.</p>
-                <hr class="my-4">
-                <a class="btn btn-primary btn-lg" href="book.html" role="button">Order Now</a>
             </div>
         </div>
+
+        <!--Jumbotron-->
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">
+                    <h3 class="display-4">Ready to Order Now</h1>
+                        <p class="lead">Just select any to make your order.</p>
+                        <hr class="my-4">
+                        <a class="btn btn-primary btn-lg" href="book.html" role="button">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Booking Form-->
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                        <label for="userName">Name</label>
+                        <input type="text" class="form-control" id="userName">
+                    </div>
+                    <div class="form-group">
+                        <label for="userEmail">Email</label>
+                        <input type="text" class="form-control" id="userEmail">
+                    </div>
+                    <div class="form-group">
+                        <label for="userPax">Pax</label>
+                        <select class="form-control" id="userPax">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="userBeverages">Beverages</label>
+                        <select class="form-control" id="userBeverages">
+                            <option>Latte</option>
+                            <option>Mocha</option>
+                            <option>Americano</option>
+                            <option>Espresso</option>
+                            <option>Cappucino</option>
+                            <option>Hazelnut Cofffee</option>
+                            <option>Macchiato Coffee</option>
+                            <option>Black Coffee</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="userDessert">Desserts</label>
+                        <select class="form-control" id="userDesserts">
+                            <option>Chocolate Mousse</option>
+                            <option>Chocolate Glaze</option>
+                            <option>Fried Ice Cream</option>
+                            <option>Waffle Ice Cream</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="userRemarks">Remarks</label>
+                        <textarea class="form-control" id="userRemarks" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="bookNow">Book Now</button>
+                </form>
+            </div>
+        </div>
+
     </div>
+
+
 
 
 
