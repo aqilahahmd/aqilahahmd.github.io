@@ -32,12 +32,12 @@ function GetBooking() {
                 row.insertCell(0).innerHTML = gId;
                 row.insertCell(1).innerHTML = gName;
                 row.insertCell(2).innerHTML = gEmail;
-                row.insertCell(2).innerHTML = gTel;
-                row.insertCell(3).innerHTML = gPax;
-                row.insertCell(2).innerHTML = gBeverages;
-                row.insertCell(2).innerHTML = gDesserts;
-                row.insertCell(4).innerHTML = gRemarks;
-                row.insertCell(5).innerHTML = "<button id='" + btnId + "' class='btn btn-danger'> Delete </button>";
+                row.insertCell(3).innerHTML = gTel;
+                row.insertCell(4).innerHTML = gPax;
+                row.insertCell(5).innerHTML = gBeverages;
+                row.insertCell(6).innerHTML = gDesserts;
+                row.insertCell(7).innerHTML = gRemarks;
+                row.insertCell(8).innerHTML = "<button id='" + btnId + "' class='btn btn-danger'> Delete </button>";
 
                 bookingIds.push(btnId);
             }
