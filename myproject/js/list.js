@@ -24,7 +24,6 @@ function GetBooking() {
                 let gPax = json.namelist[i].pax;
                 let gBeverages = json.namelist[i].beverages;
                 let gDesserts = json.namelist[i].desserts;
-                let gEmail = json.namelist[i].email;
                 let gRemarks = json.namelist[i].remarks;
                 let gId = json.namelist[i].id;
                 let btnId = "delete" + gId;
