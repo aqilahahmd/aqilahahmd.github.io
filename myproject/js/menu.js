@@ -1,5 +1,5 @@
 let bookNowBtn = document.getElementById("bookNow");
-bookNowBtn.addEventListener("click", function () {
+bookNowBtn.addEventListener("click", function(){
     let userName = document.getElementById("userName");
     let userNameVal = userName.value;
 
@@ -36,6 +36,6 @@ function bookNow(userName, userEmail, userPhone, userPax, userBeverages, userDes
     })
         .then((response) => response.json())
         .then(json => {
-            alert(json.namelist.Id + "," + json.namelist.name + "coffee booking is done")
+            alert(json.namelist.id + "," + json.namelist.name + "coffee booking is done")
         });
 }
