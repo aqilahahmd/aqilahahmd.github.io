@@ -36,6 +36,6 @@ function bookNow(userName, userEmail, userPhone, userPax, userBeverages, userDes
     })
         .then((response) => response.json())
         .then(json => {
-            alert(json.namelists.id + "," + json.namelists.name + "coffee booking is done")
+            alert("coffee booking is done")
         });
 }
